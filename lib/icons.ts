@@ -1,0 +1,52 @@
+import {
+  Smartphone,
+  Factory,
+  Car,
+  Truck,
+  Building2,
+  Wheat,
+  UtensilsCrossed,
+  Wine,
+  Cigarette,
+  Shirt,
+  Cog,
+  HeartPulse,
+  Pill,
+  Sofa,
+  Tractor,
+  Fuel,
+  Sparkles,
+  FileText,
+  Sun,
+  Zap,
+  type LucideIcon,
+  Package,
+} from "lucide-react";
+
+const iconMap: Record<string, LucideIcon> = {
+  smartphone: Smartphone,
+  factory: Factory,
+  car: Car,
+  truck: Truck,
+  building: Building2,
+  wheat: Wheat,
+  utensils: UtensilsCrossed,
+  wine: Wine,
+  cigarette: Cigarette,
+  shirt: Shirt,
+  cog: Cog,
+  heartPulse: HeartPulse,
+  pill: Pill,
+  sofa: Sofa,
+  tractor: Tractor,
+  fuel: Fuel,
+  sparkles: Sparkles,
+  fileText: FileText,
+  sun: Sun,
+  zap: Zap,
+  package: Package,
+};
+
+export function getIcon(name: string): LucideIcon {
+  return iconMap[name] ?? Package;
+}
